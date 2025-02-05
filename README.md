@@ -1,4 +1,5 @@
 <div align="center">
+  <h1>Liquid OS</h1>
   <a href="https://hyperlauncher.ai/liquid-os">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://res.cloudinary.com/dd9z3q1v8/image/upload/w_100/v1738754167/g8aphb7uohfjoks01yu0.png">
