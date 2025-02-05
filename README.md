@@ -7,7 +7,7 @@
   </a>
 </div>
 <div align="center">
-  <em>Agent Framework / shim to use Pydantic with LLMs</em>
+  <em>Agent Framework</em>
 </div>
 
 ---
@@ -21,38 +21,32 @@ LiquidOS is a Python agent framework designed to make it less painful to build p
 ## Why use LiquidOS
 
 * __Model-agnostic__
-Supports OpenAI, Anthropic, Gemini, Deepseek, Ollama, Groq, Cohere, and Mistral, and there is a simple interface to implement support for [other models](https://hyperlauncher.ai/liquid-osmodels/).
-
-* __Pydantic Logfire Integration__
-Seamlessly [integrates](https://hyperlauncher.ai/liquid-oslogfire/) with [Pydantic Logfire](https://pydantic.dev/logfire) for real-time debugging, performance monitoring, and behavior tracking of your LLM-powered applications.
+Supports OpenAI, Anthropic, Gemini, Deepseek, Ollama, Groq, Cohere, and Mistral, and there is a simple interface to implement support for other models.
 
 * __Type-safe__
-Designed to make [type checking](https://hyperlauncher.ai/liquid-osagents/#static-type-checking) as powerful and informative as possible for you.
+Designed to make type checking as powerful and informative as possible for you.
 
 * __Python-centric Design__
 Leverages Python's familiar control flow and agent composition to build your AI-driven projects, making it easy to apply standard Python best practices you'd use in any other (non-AI) project.
 
 * __Structured Responses__
-Harnesses the power of [Pydantic](https://docs.pydantic.dev/latest/) to [validate and structure](https://hyperlauncher.ai/liquid-osresults/#structured-result-validation) model outputs, ensuring responses are consistent across runs.
+Harnesses the power of [Pydantic](https://docs.pydantic.dev/latest/) to validate and structure model outputs, ensuring responses are consistent across runs.
 
 * __Dependency Injection System__
-Offers an optional [dependency injection](https://hyperlauncher.ai/liquid-osdependencies/) system to provide data and services to your agent's [system prompts](https://hyperlauncher.ai/liquid-osagents/#system-prompts), [tools](https://hyperlauncher.ai/liquid-ostools/) and [result validators](https://hyperlauncher.ai/liquid-osresults/#result-validators-functions).
+Offers an optional dependency injection system to provide data and services to your agent's system prompts, tools and result validators.
 This is useful for testing and eval-driven iterative development.
 
 * __Streamed Responses__
-Provides the ability to [stream](https://hyperlauncher.ai/liquid-osresults/#streamed-results) LLM outputs continuously, with immediate validation, ensuring rapid and accurate results.
-
-* __Graph Support__
-[Pydantic Graph](https://hyperlauncher.ai/liquid-osgraph) provides a powerful way to define graphs using typing hints, this is useful in complex applications where standard control flow can degrade to spaghetti code.
+Provides the ability to stream LLM outputs continuously, with immediate validation, ensuring rapid and accurate results.
 
 ## In Beta!
 
-PydanticAI is in early beta, the API is still subject to change and there's a lot more to do.
-[Feedback](https://github.com/pydantic/pydantic-ai/issues) is very welcome!
+LiquidOS is in early beta, the API is still subject to change and there's a lot more to do.
+[Feedback](https://t.me/hyperlauncher) is very welcome!
 
 ## Hello World Example
 
-Here's a minimal example of PydanticAI:
+Here's a minimal example of LiquidOS:
 
 ```python
 from liquid_os import Agent
@@ -66,7 +60,7 @@ agent = Agent(
 )
 
 # Run the agent synchronously, conducting a conversation with the LLM.
-# Here the exchange should be very short: PydanticAI will send the system prompt and the user query to the LLM,
+# Here the exchange should be very short: LiquidOS will send the system prompt and the user query to the LLM,
 # the model will return a text response. See below for a more complex run.
 result = agent.run_sync('Where does "hello world" come from?')
 print(result.data)
@@ -81,9 +75,7 @@ Not very interesting yet, but we can easily add "tools", dynamic system prompts,
 
 ## Tools & Dependency Injection Example
 
-Here is a concise example using PydanticAI to build a support agent for a bank:
-
-**(Better documented example [in the docs](https://hyperlauncher.ai/liquid-os#tools-dependency-injection-example))**
+Here is a concise example using LiquidOS to build a support agent for a bank:
 
 ```python
 from dataclasses import dataclass
