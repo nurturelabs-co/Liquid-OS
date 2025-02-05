@@ -1,8 +1,8 @@
 <div align="center">
   <a href="https://hyperlauncher.ai/liquid-os">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://res.cloudinary.com/dd9z3q1v8/image/upload/w_100/v1738754167/g8aphb7uohfjoks01yu0.svg">
-      <img src="https://res.cloudinary.com/dd9z3q1v8/image/upload/w_100/v1738754167/g8aphb7uohfjoks01yu0.svg" alt="LiquidOS">
+      <source media="(prefers-color-scheme: dark)" srcset="https://res.cloudinary.com/dd9z3q1v8/image/upload/w_100/v1738754167/g8aphb7uohfjoks01yu0.png">
+      <img src="https://res.cloudinary.com/dd9z3q1v8/image/upload/w_100/v1738754167/g8aphb7uohfjoks01yu0.png" alt="LiquidOS">
     </picture>
   </a>
 </div>
