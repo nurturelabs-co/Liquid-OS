@@ -23,6 +23,4 @@ __all__ = (
     "UnexpectedModelBehavior",
     "UsageLimitExceeded",
     "UserError",
-    "__version__",
 )
-__version__ = version("liquid_os_slim")
